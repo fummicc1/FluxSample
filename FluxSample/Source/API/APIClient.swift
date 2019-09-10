@@ -15,7 +15,7 @@ import FirebaseFirestoreSwift
 protocol APIRepository {
     func create<V: EntityModel>(value: V, collectionName: String) -> Single<Void>
     func update<V: EntityModel>(value: V, collectionName: String) -> Single<Void>
-    func read<V: EntityModel>(collectionName: String) -> Single<[V]>
+    func read<V: EntityModel>(type: V.Type, collectionName: String) -> Single<[V]>
     func delete<V: EntityModel>(value: V, collectionName: String) -> Single<Void>
 }
 
@@ -71,7 +71,7 @@ class APIClient: APIRepository {
         })
     }
     
-    func read<V>(collectionName: String) -> PrimitiveSequence<SingleTrait, [V]> where V : EntityModel {
+    func read<V>(type: V.Type, collectionName: String) -> PrimitiveSequence<SingleTrait, [V]> where V : EntityModel {
         return Single.create(subscribe: { (singleEvent) -> Disposable in
             Firestore.firestore().collection(collectionName).getDocuments(completion: { (snapshots, error) in
                 if let error = error {

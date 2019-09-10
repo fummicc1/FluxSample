@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3061E6A232746F7006B3372 /* ActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3061E69232746F6006B3372 /* ActionCreator.swift */; };
+		D3061E6C23274FC5006B3372 /* TimelineStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3061E6B23274FC5006B3372 /* TimelineStore.swift */; };
+		D3061E6E23275027006B3372 /* TimelineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3061E6D23275027006B3372 /* TimelineViewModel.swift */; };
+		D3061E7023275336006B3372 /* TimelineAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3061E6F23275336006B3372 /* TimelineAction.swift */; };
 		D34992B92324F749005CB7CF /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34992B82324F749005CB7CF /* RxSwift.framework */; };
 		D34992BD2324F766005CB7CF /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34992BA2324F766005CB7CF /* RxCocoa.framework */; };
 		D34992BE2324F766005CB7CF /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34992BB2324F766005CB7CF /* RxRelay.framework */; };
 		D34992BF2324F766005CB7CF /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34992BC2324F766005CB7CF /* RxBlocking.framework */; };
 		D34992C12324F771005CB7CF /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34992C02324F771005CB7CF /* RxTest.framework */; };
-		D34992C72325264C005CB7CF /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34992C62325264C005CB7CF /* Dispatch.swift */; };
-		D34992CF23252A1A005CB7CF /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34992CE23252A1A005CB7CF /* Store.swift */; };
-		D34992D12325381F005CB7CF /* TimelineViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34992D02325381F005CB7CF /* TimelineViewState.swift */; };
-		D381C8472326405F00212F5C /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D381C8462326405F00212F5C /* ViewState.swift */; };
+		D355DE58232741A200838C05 /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355DE54232741A200838C05 /* Dispatcher.swift */; };
+		D355DE59232741A200838C05 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355DE55232741A200838C05 /* Store.swift */; };
+		D355DE5B232741A200838C05 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355DE57232741A200838C05 /* Action.swift */; };
 		D381C849232640A100212F5C /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D381C848232640A100212F5C /* Memo.swift */; };
 		D381C84C2326430100212F5C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D381C84B2326430100212F5C /* GoogleService-Info.plist */; };
 		D3901C7C232483D500732FEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3901C7B232483D500732FEA /* AppDelegate.swift */; };
@@ -24,7 +27,6 @@
 		D3901C83232483D700732FEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3901C82232483D700732FEA /* Assets.xcassets */; };
 		D3901C86232483D700732FEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3901C84232483D700732FEA /* LaunchScreen.storyboard */; };
 		D3FEDA7B232644B8000078BC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FEDA7A232644B8000078BC /* APIClient.swift */; };
-		D3FEDA7D2326816B000078BC /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FEDA7C2326816B000078BC /* Action.swift */; };
 		D7CEC98BC77DD9586390C7DC /* Pods_FluxSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B93EE5AA3AB2782D605D6F6 /* Pods_FluxSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,15 +34,18 @@
 		3AF31C6797EC99871DA76B65 /* Pods-FluxSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FluxSample.release.xcconfig"; path = "Target Support Files/Pods-FluxSample/Pods-FluxSample.release.xcconfig"; sourceTree = "<group>"; };
 		5B93EE5AA3AB2782D605D6F6 /* Pods_FluxSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FluxSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2EA3095AD6E59855BE1AE8 /* Pods-FluxSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FluxSample.debug.xcconfig"; path = "Target Support Files/Pods-FluxSample/Pods-FluxSample.debug.xcconfig"; sourceTree = "<group>"; };
+		D3061E69232746F6006B3372 /* ActionCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionCreator.swift; sourceTree = "<group>"; };
+		D3061E6B23274FC5006B3372 /* TimelineStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineStore.swift; sourceTree = "<group>"; };
+		D3061E6D23275027006B3372 /* TimelineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewModel.swift; sourceTree = "<group>"; };
+		D3061E6F23275336006B3372 /* TimelineAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineAction.swift; sourceTree = "<group>"; };
 		D34992B82324F749005CB7CF /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		D34992BA2324F766005CB7CF /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		D34992BB2324F766005CB7CF /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		D34992BC2324F766005CB7CF /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		D34992C02324F771005CB7CF /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
-		D34992C62325264C005CB7CF /* Dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
-		D34992CE23252A1A005CB7CF /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
-		D34992D02325381F005CB7CF /* TimelineViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewState.swift; sourceTree = "<group>"; };
-		D381C8462326405F00212F5C /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		D355DE54232741A200838C05 /* Dispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
+		D355DE55232741A200838C05 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		D355DE57232741A200838C05 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		D381C848232640A100212F5C /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		D381C84B2326430100212F5C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D3901C78232483D500732FEA /* FluxSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FluxSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,7 +56,6 @@
 		D3901C85232483D700732FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3901C87232483D700732FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3FEDA7A232644B8000078BC /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		D3FEDA7C2326816B000078BC /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				D3901C7D232483D500732FEA /* TimelineViewController.swift */,
-				D34992D02325381F005CB7CF /* TimelineViewState.swift */,
+				D3061E6B23274FC5006B3372 /* TimelineStore.swift */,
+				D3061E6D23275027006B3372 /* TimelineViewModel.swift */,
+				D3061E6F23275336006B3372 /* TimelineAction.swift */,
 			);
 			path = Timeline;
 			sourceTree = "<group>";
@@ -105,10 +111,10 @@
 		D34992C42325255A005CB7CF /* Flux */ = {
 			isa = PBXGroup;
 			children = (
-				D34992C62325264C005CB7CF /* Dispatch.swift */,
-				D34992CE23252A1A005CB7CF /* Store.swift */,
-				D381C8462326405F00212F5C /* ViewState.swift */,
-				D3FEDA7C2326816B000078BC /* Action.swift */,
+				D3061E69232746F6006B3372 /* ActionCreator.swift */,
+				D355DE57232741A200838C05 /* Action.swift */,
+				D355DE54232741A200838C05 /* Dispatcher.swift */,
+				D355DE55232741A200838C05 /* Store.swift */,
 			);
 			path = Flux;
 			sourceTree = "<group>";
@@ -327,15 +333,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D355DE59232741A200838C05 /* Store.swift in Sources */,
+				D355DE5B232741A200838C05 /* Action.swift in Sources */,
 				D381C849232640A100212F5C /* Memo.swift in Sources */,
-				D3FEDA7D2326816B000078BC /* Action.swift in Sources */,
+				D3061E6C23274FC5006B3372 /* TimelineStore.swift in Sources */,
 				D3901C7E232483D500732FEA /* TimelineViewController.swift in Sources */,
+				D3061E7023275336006B3372 /* TimelineAction.swift in Sources */,
+				D3061E6A232746F7006B3372 /* ActionCreator.swift in Sources */,
+				D355DE58232741A200838C05 /* Dispatcher.swift in Sources */,
 				D3901C7C232483D500732FEA /* AppDelegate.swift in Sources */,
 				D3FEDA7B232644B8000078BC /* APIClient.swift in Sources */,
-				D381C8472326405F00212F5C /* ViewState.swift in Sources */,
-				D34992D12325381F005CB7CF /* TimelineViewState.swift in Sources */,
-				D34992C72325264C005CB7CF /* Dispatch.swift in Sources */,
-				D34992CF23252A1A005CB7CF /* Store.swift in Sources */,
+				D3061E6E23275027006B3372 /* TimelineViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
