@@ -7,8 +7,10 @@
 //
 
 import Foundation
-
+import RxSwift
 
 enum TimelineAction: Action {
     case getMemos([Entity.Memo])
+    case changeScope(DisclosureScope)
+    case moveToAddScene
 }

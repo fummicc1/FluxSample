@@ -8,6 +8,7 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
 
 class TimelineViewController: UIViewController {
 
@@ -15,7 +16,8 @@ class TimelineViewController: UIViewController {
     @IBOutlet private weak var memoTableView: UITableView!
     @IBOutlet private weak var addMemoButton: UIButton!
     
-    private var viewModel: TimelineViewModel?
+    private var dataSource: TimelineDataSource?
+    private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,9 +26,21 @@ class TimelineViewController: UIViewController {
     private func configure() {
         let scopeDriver = scopeSegmentedControl.rx.value.asDriver()
         let addMemoButtonDriver = addMemoButton.rx.tap.asDriver()
-        viewModel = TimelineViewModel()
+        
+        dataSource = TimelineDataSource()
+        
+        dataSource?.store.moveToAdd.bind(to: moveToAddScene).disposed(by: disposeBag)
     }
+}
 
-
+extension TimelineViewController {
+    var moveToAddScene: Binder<Void> {
+        return Binder(self) { (viewController, value) in
+            guard let addMemoViewController = UIStoryboard(name: "AddMemo", bundle: nil).instantiateInitialViewController() else {
+                return
+            }
+            viewController.present(addMemoViewController, animated: true, completion: nil)
+        }
+    }
 }
 

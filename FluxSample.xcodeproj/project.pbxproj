@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D3061E6A232746F7006B3372 /* ActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3061E69232746F6006B3372 /* ActionCreator.swift */; };
 		D3061E6C23274FC5006B3372 /* TimelineStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3061E6B23274FC5006B3372 /* TimelineStore.swift */; };
-		D3061E6E23275027006B3372 /* TimelineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3061E6D23275027006B3372 /* TimelineViewModel.swift */; };
 		D3061E7023275336006B3372 /* TimelineAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3061E6F23275336006B3372 /* TimelineAction.swift */; };
 		D34992B92324F749005CB7CF /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34992B82324F749005CB7CF /* RxSwift.framework */; };
 		D34992BD2324F766005CB7CF /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34992BA2324F766005CB7CF /* RxCocoa.framework */; };
@@ -26,6 +25,9 @@
 		D3901C81232483D500732FEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3901C7F232483D500732FEA /* Main.storyboard */; };
 		D3901C83232483D700732FEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3901C82232483D700732FEA /* Assets.xcassets */; };
 		D3901C86232483D700732FEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3901C84232483D700732FEA /* LaunchScreen.storyboard */; };
+		D3B3245C232775EF004797D4 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B3245B232775EF004797D4 /* RxDataSources.framework */; };
+		D3B3246223279455004797D4 /* TimelineDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B3246123279455004797D4 /* TimelineDataSource.swift */; };
+		D3B324642327950B004797D4 /* TimelineActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B324632327950B004797D4 /* TimelineActionCreator.swift */; };
 		D3FEDA7B232644B8000078BC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FEDA7A232644B8000078BC /* APIClient.swift */; };
 		D7CEC98BC77DD9586390C7DC /* Pods_FluxSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B93EE5AA3AB2782D605D6F6 /* Pods_FluxSample.framework */; };
 /* End PBXBuildFile section */
@@ -36,7 +38,6 @@
 		CF2EA3095AD6E59855BE1AE8 /* Pods-FluxSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FluxSample.debug.xcconfig"; path = "Target Support Files/Pods-FluxSample/Pods-FluxSample.debug.xcconfig"; sourceTree = "<group>"; };
 		D3061E69232746F6006B3372 /* ActionCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionCreator.swift; sourceTree = "<group>"; };
 		D3061E6B23274FC5006B3372 /* TimelineStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineStore.swift; sourceTree = "<group>"; };
-		D3061E6D23275027006B3372 /* TimelineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewModel.swift; sourceTree = "<group>"; };
 		D3061E6F23275336006B3372 /* TimelineAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineAction.swift; sourceTree = "<group>"; };
 		D34992B82324F749005CB7CF /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		D34992BA2324F766005CB7CF /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
@@ -55,6 +56,9 @@
 		D3901C82232483D700732FEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3901C85232483D700732FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3901C87232483D700732FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3B3245B232775EF004797D4 /* RxDataSources.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxDataSources.framework; path = Carthage/Build/iOS/RxDataSources.framework; sourceTree = "<group>"; };
+		D3B3246123279455004797D4 /* TimelineDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineDataSource.swift; sourceTree = "<group>"; };
+		D3B324632327950B004797D4 /* TimelineActionCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineActionCreator.swift; sourceTree = "<group>"; };
 		D3FEDA7A232644B8000078BC /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3B3245C232775EF004797D4 /* RxDataSources.framework in Frameworks */,
 				D34992C12324F771005CB7CF /* RxTest.framework in Frameworks */,
 				D34992BD2324F766005CB7CF /* RxCocoa.framework in Frameworks */,
 				D34992BE2324F766005CB7CF /* RxRelay.framework in Frameworks */,
@@ -87,6 +92,7 @@
 		D34992B72324F748005CB7CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D3B3245B232775EF004797D4 /* RxDataSources.framework */,
 				D34992C02324F771005CB7CF /* RxTest.framework */,
 				D34992BC2324F766005CB7CF /* RxBlocking.framework */,
 				D34992BA2324F766005CB7CF /* RxCocoa.framework */,
@@ -102,8 +108,9 @@
 			children = (
 				D3901C7D232483D500732FEA /* TimelineViewController.swift */,
 				D3061E6B23274FC5006B3372 /* TimelineStore.swift */,
-				D3061E6D23275027006B3372 /* TimelineViewModel.swift */,
 				D3061E6F23275336006B3372 /* TimelineAction.swift */,
+				D3B3246123279455004797D4 /* TimelineDataSource.swift */,
+				D3B324632327950B004797D4 /* TimelineActionCreator.swift */,
 			);
 			path = Timeline;
 			sourceTree = "<group>";
@@ -316,6 +323,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxDataSources.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -336,14 +344,15 @@
 				D355DE59232741A200838C05 /* Store.swift in Sources */,
 				D355DE5B232741A200838C05 /* Action.swift in Sources */,
 				D381C849232640A100212F5C /* Memo.swift in Sources */,
+				D3B324642327950B004797D4 /* TimelineActionCreator.swift in Sources */,
 				D3061E6C23274FC5006B3372 /* TimelineStore.swift in Sources */,
 				D3901C7E232483D500732FEA /* TimelineViewController.swift in Sources */,
+				D3B3246223279455004797D4 /* TimelineDataSource.swift in Sources */,
 				D3061E7023275336006B3372 /* TimelineAction.swift in Sources */,
 				D3061E6A232746F7006B3372 /* ActionCreator.swift in Sources */,
 				D355DE58232741A200838C05 /* Dispatcher.swift in Sources */,
 				D3901C7C232483D500732FEA /* AppDelegate.swift in Sources */,
 				D3FEDA7B232644B8000078BC /* APIClient.swift in Sources */,
-				D3061E6E23275027006B3372 /* TimelineViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
